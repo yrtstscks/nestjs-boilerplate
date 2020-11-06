@@ -1,5 +1,5 @@
 {
-  "name": "entities-service",
+  "name": "boilerplate",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -15,8 +15,8 @@
     "start:prod": "node dist/main",
     "docker:up": "docker-compose -p nestjs-api-boilerplate up -d",
     "docker:down": "docker-compose -p nestjs-api-boilerplate down",
-    "docker:npm-install": "docker exec -it entities-service sh -c 'npm install'",
-    "docker:logs": "docker logs -f entities-service",
+    "docker:npm-install": "docker exec -it boilerplate sh -c 'npm install'",
+    "docker:logs": "docker logs -f boilerplate",
     "docker:start-debug": "docker:up; nest start --debug 0.0.0.0:9229 --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",

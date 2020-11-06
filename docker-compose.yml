@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   main:
-    container_name: entities-service
+    container_name: boilerplate
     build:
       context: .
       target: development
@@ -21,12 +21,12 @@ services:
       - redis
       - postgres
   redis:
-    container_name: entities-service-redis
+    container_name: boilerplate-redis
     image: redis:5
     networks:
       - esnet
   postgres:
-    container_name: entities-service-postgres
+    container_name: boilerplate-postgres
     image: postgres:12
     networks:
       - esnet
